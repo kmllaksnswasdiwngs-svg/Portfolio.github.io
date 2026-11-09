@@ -1,0 +1,176 @@
+
+/* ตั้งค่าพื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Tahoma", sans-serif;
+    background: #f8f6fc;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* ส่วนหัวเว็บไซต์ */
+header {
+    min-height: 380px;
+    background: linear-gradient(135deg, #4b267d, #8055b5, #c4a2df);
+    color: white;
+    text-align: center;
+    padding: 100px 20px 80px;
+    border-bottom: 7px solid #d9b96e;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+header h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #ffe7a3;
+}
+
+header p {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+/* รูปแบบหัวข้อ */
+section {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(60, 35, 90, 0.10);
+}
+
+section h2 {
+    color: #5b3587;
+    font-size: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #d9b96e;
+}
+
+/* เกี่ยวกับตัวเอง */
+#about p {
+    font-size: 17px;
+    text-indent: 35px;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* ผลงาน */
+.project {
+    background: #f7f2fc;
+    margin: 20px 0;
+    padding: 25px;
+    border-left: 6px solid #8055b5;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(80, 50, 120, 0.15);
+}
+
+.project h3 {
+    color: #613a91;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* ทักษะและความสามารถ */
+#skills ul {
+    padding-left: 30px;
+}
+
+#skills li {
+    font-size: 17px;
+    margin: 12px 0;
+}
+
+#skills li::marker {
+    color: #8055b5;
+}
+
+/* เป้าหมายในอนาคต */
+#goals p {
+    font-size: 17px;
+    text-align: justify;
+    text-indent: 35px;
+}
+
+/* ส่วนท้ายเว็บไซต์ */
+footer {
+    background: linear-gradient(135deg, #4b267d, #8055b5);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    margin-top: 60px;
+    border-top: 6px solid #d9b96e;
+}
+
+footer h2 {
+    color: #ffe7a3;
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* รองรับโทรศัพท์มือถือ */
+@media (max-width: 768px) {
+
+    header {
+        padding: 70px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header h2 {
+        font-size: 23px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    section {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+
+    section h2 {
+        font-size: 23px;
+    }
+
+    .project h3 {
+        font-size: 18px;
+    }
+
+    .project p,
+    #about p,
+    #goals p,
+    #skills li {
+        font-size: 15px;
+    }
+}
